@@ -1,0 +1,287 @@
+
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'kalam', cursive;
+    font-weight: 400;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0;
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 8em;
+    opacity: 0.1;
+    }    
+
+
+.logo {
+    position: relative; 
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 3.6em;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+}
+
+header, footer {
+     color: white;
+     background: rgb(0,21,66);
+    background: radial-gradient(circle, rgba(0,21,66,1) 41%, rgba(0,40,150,1) 84%);
+}
+
+header  {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: space-between;
+    flex: auto;
+}
+
+header .right {
+    position: absolute;
+    top: 1.5vw;
+    right: 1vw;
+    display: flex;
+    flex-direction:column;
+    gap: 1vw;
+    background-color: white;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-end;
+    flex: auto;
+    margin-right: 2vw;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
+    flex: auto;
+}
+
+.made {
+    margin-right: 5vw;
+    margin-left: 12.5vw;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    background-image: url("https://www.wallpapertip.com/wmimgs/94-948588_light-color-curves-wallpaper-hd-wallpapers-light-color.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 50px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    overflow-y: auto;
+}
+
+aside {
+    display: flex;
+    flex: 1;
+    overflow-y: auto;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+
+main a, main p,
+table {
+    border-left: 4px groove;
+    border-right: 4px groove;
+    border-image: linear-gradient(to bottom, #0074D9, #00A8FF);
+    border-image-slice: 1;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    padding: 0;
+    flex: auto;
+}
+
+nav li {
+    font-size: 4.5vw;
+    margin-right: 5vw;
+}
+
+nav li:last-child {
+    margin-right: 2vw;
+}
+
+li {
+    list-style-type: none;
+    font-size: 6vw;
+}
+
+ul.listecv li {
+    font-size: 16px;
+}
+
+ul.listecv li::before {
+    content: "\27A4";
+    padding-right: 10px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: white;
+    border-radius: 10px;
+}
+
+a:visited {
+    color: #FFD700;
+}
+
+h2, h3, h4 {
+    text-align: center;
+    color: #001542;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+table {
+    margin: 0 auto;
+    border-spacing: 10px;
+}
+
+th, td {
+    text-align:center;
+    column-width:250px;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+.conteneur {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+.twitter-tweet {
+    max-width: 100%;
+    height: auto;
+}
+
+h2, .citation {
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    border: none;
+}
+
+.jeff {
+    font-weight: normal;
+}
+
+address a {
+    color: #001542;
+    border:none;
+}
+
+.github {
+    border: none;
+}
+.github img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+} 
+
+.listelogo {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    height: auto;
+}
+
+.listelogo img {
+    width: 150px; 
+    height: auto;
+}
+
+    
+@media (max-width: 1200px) {
+    body.works_on_smartphone {
+	display: block;
+    }
+    body.works_on_smartphone main {
+	display: block;
+    }
+    header .right {
+	float: none;
+    }
+    .conteneur {
+	display: block;
+    }
+.listelogo {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+}
+   
+}
+
+@media (max-width: 600px) {
+    header .right {
+        top: 0.05vw;
+        gap: 0.1vw;
+    }
+}
+/* image JS challenge */
+
+img.small {
+    width: 100px;
+    margin: 0 auto;
+}
+
+/* button Js animation */
+
+.button-custom {
+    color: white;
+    font-size: 1.8em;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    background:  radial-gradient(circle, rgba(0,21,66,1) 41%, rgba(0,40,150,1) 84%);
+}
